@@ -26,8 +26,8 @@ export const Final = () => {
 
     try {
       const response = await axios.get(
-        "http://43.205.216.219:80/api/v1/fetch",
-        requestBody
+        "/api/v1/fetch", // FIXED: Was "http://43.205.216.219:80/api/v1/fetch"
+        { params: requestBody }
       );
       const data = response.data;
       setAnalysisData(data); // Update the analysis data state
