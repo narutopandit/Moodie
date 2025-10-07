@@ -30,6 +30,8 @@ RUN apk add --no-cache bash
 # Create startup script to replace environment variables
 RUN echo '#!/bin/bash' > /docker-entrypoint.sh \
     && echo 'envsubst < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf' >> /docker-entrypoint.sh \
+    && echo 'ls -l /etc/nginx/conf.d/' >> /docker-entrypoint.sh \
+    && echo 'cat /etc/nginx/conf.d/default.conf' >> /docker-entrypoint.sh \
     && echo 'nginx -g "daemon off;"' >> /docker-entrypoint.sh \
     && chmod +x /docker-entrypoint.sh
 
