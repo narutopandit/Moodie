@@ -28,7 +28,9 @@ COPY --from=build /app/nginx.conf /etc/nginx/templates/default.conf.template
 RUN apk add --no-cache bash
 
 # Create startup script to replace environment variables
-RUN echo '#!/bin/bash\nenvsubst < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf\nnginx -g "daemon off;"' > /docker-entrypoint.sh \
+RUN echo '#!/bin/bash' > /docker-entrypoint.sh \
+    && echo 'envsubst < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf' >> /docker-entrypoint.sh \
+    && echo 'nginx -g "daemon off;"' >> /docker-entrypoint.sh \
     && chmod +x /docker-entrypoint.sh
 
 # Expose port

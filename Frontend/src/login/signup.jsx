@@ -36,7 +36,7 @@ const Signup = () => {
     <div className="signup-container" style={{ backgroundColor: '#081c29', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div className="signup-card" style={{ backgroundColor: '#34495e', padding: '20px', borderRadius: '5px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', maxWidth: '400px', width: '100%' }}>
       <img src={icon14} alt="Logo" style={{ width: '100px', height: '100px', display: 'block', margin: '0 auto' }} />
-        <h2 style={{ color: '#fff', textAlign: 'center', marginBottom: '20px',color: '#ffff',fontSize:'2rem' }}>Signup</h2>
+        <h2 style={{ color: '#ffff', textAlign: 'center', marginBottom: '20px', fontSize:'2rem' }}>Signup</h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="username" style={{ color: '#fff' }}>Username:</label>
           <input
