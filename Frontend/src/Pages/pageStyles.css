@@ -1,0 +1,143 @@
+.to_tools {
+    max-width: 1250px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color:#081C29;
+    box-shadow: 0px 0px 20px 10px rgba(21, 234, 254, 0.416);
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+  .to_tool h2{
+    color: #04A2E2;
+  }
+  .to-head{
+    color: #04A2E2;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .to_tool {
+    flex-basis: calc(25% - 20px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(54, 53, 53);
+    border: 0px solid whitesmoke;
+    text-align: center;
+  }
+  .to_tool p{
+    color:  white;
+  }
+  
+  .to_to_tool img {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .to_tool h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .to_tool p {
+    font-size: 14px;
+    color: #ffff;
+    margin-bottom: 20px;
+  }
+  
+  .to_tool a {
+    text-decoration: none;
+    color: #04A2E2;
+    font-weight: bold;
+  }
+  
+  .to_tool a:hover {
+    text-decoration: underline;
+  }
+  .to_container{
+    height:43rem
+  }
+  .to-foot{
+    background-color: #081C29;
+    color: #fff;
+    text-align: center;
+    padding: 0.6rem 0;
+}
+
+
+/* #################################### */
+.ca_case_page {
+  padding: 25px;
+  padding-bottom: 2rem;
+}
+
+.ca_overview, .ca_challenge, .ca_solution {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ca_overview h2, .ca_challenge h2, .ca_solution h2 {
+  color: #333;
+}
+
+.ca_overview p, .ca_challenge p, .ca_solution p {
+  color: #666;
+}
+
+.ca_footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ####################################### */
+.about{
+  background-color: #081C29;
+}
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: AUTO;
+  background-color: #081C29;
+}
+
+.about-container h1 {
+  font-size: 30px;
+  color: #04A2E2;
+  margin-bottom: 20px;
+}
+
+.about-container h2 {
+  font-size: 28px;
+  color: #04A2E2;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about-container p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.about-container ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-container ol li {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.about-container strong {
+  font-weight: bold;
+  color: #04A2E2;
+}

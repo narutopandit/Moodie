@@ -1,0 +1,65 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 0;}
+
+.text-container {
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  text-align: start;
+  width: 65%;
+  padding: 20px;
+  padding-right: 20rem;
+  z-index: 999;
+}
+
+.app-head {
+  color: #04a2e2;
+  font-size: 6rem;
+}
+
+.app-text {
+  width: 45rem;
+  word-spacing: 1px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  mix-blend-mode: multiply;
+}
+
+.main-logo {
+  max-width: 100%;
+  padding-bottom: 7rem;
+  padding-right: 2rem;
+  padding-left: 0;
+  padding-top: 0;
+  height: auto;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; /* Adjust height as needed */
+  z-index: 1;
+  background-color: rgba(0, 0, 139, 0.7); /* Dark blue color with some transparency */
+}
+.app-logo {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the background image */
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

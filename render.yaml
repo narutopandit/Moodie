@@ -1,0 +1,27 @@
+services:
+  # Backend API service
+  - type: web
+    name: moodie-backend
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /metrics
+
+  # Frontend service
+  - type: web
+    name: moodie-frontend
+    env: docker
+    dockerfilePath: ./Frontend/Dockerfile
+    dockerContext: ./Frontend
+    plan: free
+    buildCommand: npm run build
+    envVars:
+      - key: BACKEND_URL
+        fromService:
+          name: moodie-backend
+          type: web
+          property: host
